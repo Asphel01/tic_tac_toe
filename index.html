@@ -9,8 +9,15 @@
 </head>
 <body>
     <h1 class="title">Tic Tac Toe</h1>
-    <p class="Start">Start:</p>
-    <button class="startBtn">Player vs Player</button>
+    <div class="playerInput">
+        <label for="player1">Player 1:</label>
+        <input type="text" name="player1" id="player1">
+    </div>
+    <div class="playerInput">
+        <label for="player2">Player 2:</label>
+        <input type="text" name="player2" id="player2">
+    </div>
+    <button class="startBtn">Start</button>
     <div class="gridContainer">
         <div class="board">
             <div class=" square" id="00"></div>
@@ -25,7 +32,6 @@
         </div>
     </div>
     <p class="winnerDisplay"></p>
-    <p class="turnStatus"></p>
     <button class="reset">Reset Board</button>
 </body>
 </html>
