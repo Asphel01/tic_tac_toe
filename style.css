@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.gridContainer {
+    flex: auto;
+    max-height: 400px;
+    width: 400px;
+    background-color: darkgrey;
+}
+
+.board {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.board div {
+    background-color: white;
+}
